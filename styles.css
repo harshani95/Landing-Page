@@ -10,38 +10,6 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-/* hamburger */
-
-nav .right .mainMenu {
-    display: flex;
-    list-style: none;
-}
-
-  nav .right .mainMenu li a {
-    display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 18px;
-    transition: 0.2s ease;
-    cursor: pointer;
-  }
-
-
-  nav .right .openMenu {
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
-  }
-
-  nav .right .mainMenu .closeMenu
- {
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
-  }
 
 /* Navbar */
 
@@ -56,20 +24,50 @@ nav{
     z-index: 1000;
 }
 
-.left{
+nav .right .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .right .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+
+nav .right .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .right .mainMenu .closeMenu{
+   font-size: 2rem;
+   display: none;
+   cursor: pointer;
+}
+
+nav .left{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.right{
+nav .right{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex: 1; 
 }
 
-.right ul{
+nav .right ul{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;    
@@ -81,15 +79,15 @@ nav{
     
 }
 
-.right ul li{
-    padding: 0 30px;
+nav .right ul li{
+    padding: 0 10px;
     align-items: center;
 
 }
 
-.right ul li:last-child {
+/* nav .right ul li:last-child {
     margin-right: 50px;
-}
+} */
 
 
 
@@ -401,7 +399,7 @@ nav{
 
 /* Footer */
 
-.footer{
+footer{
     width: 1440px;
     height: 266px;
     top: 2319px;
@@ -411,7 +409,7 @@ nav{
     margin: 0 auto;
 }
 
-.footer .content{
+footer .content{
     width: 1280px;
     height: 141px;
     justify-content: space-between;
@@ -420,7 +418,7 @@ nav{
     color: #FFFFFF;
 }
 
-.footer .content .left{
+footer .content .left{
     width: 413px;
     height: 102px;
     gap: 20px;
@@ -429,19 +427,20 @@ nav{
     display: flex;
 }  
 
-.footer .content .left img{
+footer .content .left img{
     margin-bottom: 15px;
 }
 
-.footer .content .right{
+footer .content .right{
     width: 522px;
     height: 141px;
     gap: 128px;
     display: flex;
     flex: 2;
+    margin-left: 50px;
 }
 
-.footer .content .right .sub-left{
+footer .content .right .sub-left{
     width: 197px;
     height: 141px;
     gap: 12px;
@@ -449,7 +448,7 @@ nav{
     flex-direction: column;
 }
 
-.footer .content .right .sub-right{
+footer .content .right .sub-right{
     width: 197px;
     height: 129px;
     gap: 10px;
@@ -457,8 +456,8 @@ nav{
     flex-direction: column;
 }
 
-.footer .content .right .sub-right p, 
-.footer .content .right .sub-left p{
+footer .content .right .sub-right p, 
+footer .content .right .sub-left p{
     font-family: Inter;
     font-size: 21px;
     font-weight: 600;
@@ -468,20 +467,20 @@ nav{
     padding: 0;
 }
 
-.footer .content .right.sub-column {
+footer .content .right.sub-column {
     flex: 1;
     margin-right: 20px;
     
 }
 
-.footer .content .right .sub-left,
-.footer .content .right .sub-right {
+footer .content .right .sub-left,
+footer .content .right .sub-right {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.footer .content .right .sub-left ul
+footer .content .right .sub-left ul
  {
     list-style: none;
     padding: 0;
@@ -491,7 +490,7 @@ nav{
     gap: 12px;
 }
 
-.footer .content .right .sub-right ul{
+footer .content .right .sub-right ul{
     padding: 0;
     margin: 0;
     width: 197px;
@@ -500,8 +499,8 @@ nav{
     list-style: none;
 }
 
-.footer .content .right .sub-left ul li,
-.footer .content .right .sub-right ul li {
+footer .content .right .sub-left ul li,
+footer .content .right .sub-right ul li {
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
@@ -513,14 +512,14 @@ nav{
 }
 
 
-.footer .bottom .bottom-content{
+footer .bottom .bottom-content{
     width: 257px;
     height: 17px;
     gap: 16px;
     margin: 0 auto;
 }
 
-.footer .bottom .bottom-content p{
+footer .bottom .bottom-content p{
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
